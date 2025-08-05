@@ -1,11 +1,11 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div>
+    <bl-icon type="success" size="2rem"></bl-icon>
+    <bl-icon type="filter" size="2rem"></bl-icon>
+  </div>
 </template>
+<script setup lang="ts">
+import BlIcon from './components/BlIcon/BlIcon.vue'
+</script>
 
 <style scoped></style>

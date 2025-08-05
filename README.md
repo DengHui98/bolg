@@ -1,39 +1,26 @@
-# vue-project
+# 博客项目
 
-This template should help get you started developing with Vue 3 in Vite.
+作为学习目的， 搭建个人博客西永
 
-## Recommended IDE Setup
+## 技术栈
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- vue
+- typescript
+- tailwindcss
 
-## Type Support for `.vue` Imports in TS
+## 功能
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- [ ] 登录
+- [ ] 登出
 
-## Customize configuration
+## 实现
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- [x] 图标组件
+- [ ] 头像组件
+- [ ] 分页组件
 
-## Project Setup
+### 图标组件
 
-```sh
-npm install
-```
+script/generate-icon-type.ts 读取 图标的css文件，建立图标的联合类型，实现图标组件提示
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+问题： package.json 中 type: "module" 注释掉才可以执行 generate-icon-type.ts， 但是 运行 程序的时候又需要 type: "module"
