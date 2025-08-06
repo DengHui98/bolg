@@ -5,7 +5,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import BlIcon from './components/BlIcon/BlIcon.vue'
+import BlIcon from './components/BlIcon'
 </script>
 
 <style scoped></style>

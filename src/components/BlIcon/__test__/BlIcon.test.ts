@@ -1,14 +1,14 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import BlIcon from '../BlIcon.vue'
+import BlIcon from '../src/BlIcon.vue'
 
 describe('BlIcon', () => {
   it('渲染正确的 class 和 style', () => {
     const wrapper = mount(BlIcon, {
       props: {
         type: 'home',
-        size: '2rem'
-      }
+        size: '2rem',
+      },
     })
     const icon = wrapper.find('i')
     expect(icon.classes()).toContain('iconfont')
@@ -19,8 +19,8 @@ describe('BlIcon', () => {
   it('默认 size 为 1rem', () => {
     const wrapper = mount(BlIcon, {
       props: {
-        type: 'user'
-      }
+        type: 'user',
+      },
     })
     const icon = wrapper.find('i')
     expect(icon.element.style.fontSize).toBe('1rem')
